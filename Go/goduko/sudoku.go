@@ -1,4 +1,4 @@
-package sudoku
+package goduko
 
 import (
 	"io/ioutil"

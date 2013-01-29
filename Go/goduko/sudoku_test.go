@@ -1,4 +1,4 @@
-package sudoku
+package goduko
 
 import "testing"
 
@@ -42,6 +42,19 @@ func TestSolve88(t *testing.T) {
 
 	if s.GetSolutionsCount() != 88 {
 		t.Errorf("Expected 88 != Actual %v", s.GetSolutionsCount())
+	}
+}
+
+func TestFail(t *testing.T) {
+	// load sudoku
+	s, err := NewSudokuFromString(noSolution)
+	if err != nil {
+		t.Error(err)
+	}
+	s.Solve()
+
+	if s.isSolved() != false {
+		t.Errorf("Expected: 'false' != Actual: %v", s.isSolved())
 	}
 }
 
