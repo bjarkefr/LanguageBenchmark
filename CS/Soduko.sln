@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soduko", "Soduko\Soduko.csproj", "{3C69C973-5088-46C5-93F0-A892A92E9690}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://baridhara:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Soduko\\Soduko.csproj
+		SccProjectName1 = Soduko
+		SccLocalPath1 = Soduko
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C69C973-5088-46C5-93F0-A892A92E9690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C69C973-5088-46C5-93F0-A892A92E9690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C69C973-5088-46C5-93F0-A892A92E9690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C69C973-5088-46C5-93F0-A892A92E9690}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

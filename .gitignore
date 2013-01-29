@@ -1,0 +1,8 @@
+*.[oa]
+obj/
+bin/
+*.h.gch
+*.dblite
+*.exe
+*.suo
+Go/sudoku
