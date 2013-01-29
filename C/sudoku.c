@@ -1,10 +1,10 @@
 /*
  ============================================================================
- Name        : suduko.c
+ Name        : sudoku.c
  Author      : Bjarke Frøsig
  Version     : 0.01
  Copyright   : GPL
- Description : Naive recursive Suduko solver
+ Description : Naive recursive Sudoku solver
  ============================================================================
  */
 

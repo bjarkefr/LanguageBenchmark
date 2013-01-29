@@ -6,3 +6,4 @@ bin/
 *.exe
 *.suo
 Go/sudoku
+C/sudoku

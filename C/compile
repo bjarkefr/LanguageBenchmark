@@ -1,2 +1,2 @@
 #!/bin/sh
-gcc -std=c99 -O9 -march=atom -finline-functions -funswitch-loops suduko.c
+gcc -std=c99 -O9 -march=atom -finline-functions -funswitch-loops sudoku.c -o sudoku
