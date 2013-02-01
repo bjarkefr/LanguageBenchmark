@@ -89,11 +89,9 @@ static void process(int x, int y)
 	for(unsigned int v = 1; v != 512; v <<= 1)
 	{
 		unsigned int* cx = board.cols + x;
-		if(*cx & v)
-			continue;
-
 		unsigned int* cy = board.rows + y;
-		if(*cy & v)
+
+		if(*cx & v | *cy & v)
 			continue;
 
 		unsigned int* cb = &board.blocks[div3(y)][div3(x)];
