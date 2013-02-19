@@ -134,7 +134,6 @@ static void preprocess()
 			board.cols[x] |= bv;
 			board.rows[y] |= bv;
 			board.blocks[div3(y)][div3(x)] |= bv;
-			//printf("%u%c;", bitpos(board.trace[p] & 511), board.trace[p] & 512 ? '*' : ' ');
 		}
 	}
 }
