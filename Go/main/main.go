@@ -3,31 +3,35 @@ package main
 import (
 	"flag"
 	"fmt"
-	"goduko"
+	"github.com/paddie/godoku"
 )
 
 var path string
 var doPrint bool
 
 func init() {
-	flag.StringVar(&path, "path", "tmp", "'-path <path-to-sudoku>'")
+	flag.StringVar(&path, "path", "", "'-path <path-to-sudoku>'")
 	flag.BoolVar(&doPrint, "print", false, "'-print' to print solutions")
 }
 
 func main() {
 	flag.Parse()
 
+	if path == "" {
+		panic("No path argument. -help to get help")
+	}
+
 	fmt.Println(path)
 
-	s, err := goduko.NewSudokuFromFile(path, doPrint)
+	s, err := godoku.NewSudokuFromFile(path, 9)
 
 	if err != nil {
 		fmt.Printf("path = '%v'", path)
 		panic(err)
 	}
-
-	s.Solve()
-
-	fmt.Printf("isSolved = %v\n", s.IsSolved())
-
+	if doPrint {
+		s.SolveAndPrint()
+	} else {
+		s.Solve()
+	}
 }
