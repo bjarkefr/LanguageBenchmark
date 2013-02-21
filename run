@@ -1,10 +1,10 @@
 #!/bin/sh
-#for bench in Test*
-#do
-#    pushd ${bench}
-#    ./compile
-#    popd
-#done
+for bench in Test*
+do
+    pushd ${bench}
+    ./compile
+    popd
+done
 
 for bench in Samples/*.txt
 do

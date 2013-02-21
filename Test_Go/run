@@ -1,2 +1,2 @@
 #!/bin/sh
-./Go -path $1
+./Test_Go -path $1 -print
