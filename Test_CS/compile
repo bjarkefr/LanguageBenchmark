@@ -1,0 +1,2 @@
+#!/bin/sh
+mcs -optimize -out:cs Soduko/sudoko.cs

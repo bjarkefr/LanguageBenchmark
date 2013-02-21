@@ -1,0 +1,20 @@
+#!/bin/sh
+#for bench in Test*
+#do
+#    pushd ${bench}
+#    ./compile
+#    popd
+#done
+
+for bench in Samples/*.txt
+do
+    for test in Test_*
+    do
+	pushd ${test}
+	echo Priming ${test} with ${bench}
+	./run ../${bench}
+	echo Timing ${test} with ${bench}
+	time ./run ../${bench}
+	popd
+    done
+done

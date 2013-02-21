@@ -5,7 +5,7 @@ bin/
 *.dblite
 *.exe
 *.suo
-Go/sudoku
-C/sudoku
-Exp/sudoku
-Go/Go
+Test_C/sudoku
+Test_Exp/sudoku
+Test_Go/Go
+Test_CS/cs
