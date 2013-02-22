@@ -1,0 +1,4 @@
+#!/bin/sh
+# export GOPATH=`pwd`/../..:${GOPATH}
+# go get
+javac main.java
