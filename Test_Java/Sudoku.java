@@ -80,7 +80,7 @@ public class Sudoku {
 	}
 	
 	public static String horizontalSep(int cols) {
-		String str = "", repString = "   ---------";		
+		String str = "", repString = "   ---------";
 		for (int i=0; i < cols; i++) {
 			str+= repString;
 		}

@@ -1,4 +1,3 @@
 #!/bin/sh
-# export GOPATH=`pwd`/../..:${GOPATH}
-# go get
+export PATH=${PATH}:$(pwd)/../../jdk1.7.0_15/bin
 javac main.java

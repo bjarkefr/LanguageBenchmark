@@ -6,7 +6,7 @@ public class main {
 		Scanner sudoScan = new Scanner(System.in);
 		Sudoku s = new Sudoku(9,9);
 		
-		// Indlæser fra input
+		// Indlaoeiser fra input
 		//System.out.println("Loading SuDoku from file...");
 		for (int i = 0; i < 9; i++) {
 			for (int j = 0; j < 9; j++) {
