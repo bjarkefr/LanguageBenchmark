@@ -8,5 +8,6 @@ bin/
 *.class
 Test_C/sudoku
 Test_Exp/sudoku
+Test_D/sudoku
 Test_Go/Go
 Test_CS/cs
