@@ -1,0 +1,2 @@
+#!/bin/sh
+gdc -O9 -march=$1 -finline-functions -funswitch-loops sudoku.d -o sudoku

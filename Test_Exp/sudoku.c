@@ -144,6 +144,8 @@ int main(void)
 
 	preprocess();
 
+	print_board();
+
 	process(0);
 
 	return EXIT_SUCCESS;
