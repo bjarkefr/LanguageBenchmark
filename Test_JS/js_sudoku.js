@@ -96,7 +96,6 @@ function read_board_from_console(filename, success) {
     return board;
 }
 
-process.stdout.write(process.argv[2] + '\n');
 var board = read_board_from_console(process.argv[2]);
 evaluate_board_setup(board, 0);
 process.exit(0);

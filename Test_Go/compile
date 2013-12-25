@@ -1,3 +1,2 @@
 #!/bin/sh
-export GOPATH=`pwd`/../..:${GOPATH}
-go get
+go build sudoku.go

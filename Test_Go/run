@@ -1,2 +1,2 @@
 #!/bin/sh
-./Test_Go -path $1 -print
+./sudoku < $1
