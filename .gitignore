@@ -6,6 +6,8 @@ bin/
 *.exe
 *.suo
 *.class
+*.dump
+*.beam
 Test_C/sudoku
 Test_Exp/sudoku
 Test_D/sudoku

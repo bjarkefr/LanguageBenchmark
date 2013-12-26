@@ -1,0 +1,2 @@
+#!/bin/sh
+erl -load sudoku.beam -s sudoku main -s init stop -noshell < $1
