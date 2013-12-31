@@ -1,2 +1,2 @@
 #!/bin/sh
-gdc -O9 -march=$1 -finline-functions -funswitch-loops sudoku.d -o sudoku
+gdc -O9 -march=native -finline-functions -funswitch-loops sudoku.d -o sudoku

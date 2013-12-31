@@ -1,10 +1,9 @@
 #!/bin/sh
-arch=k6
 
 for bench in Test*
 do
     pushd ${bench}
-    ./compile $arch
+    ./compile
     popd
 done
 

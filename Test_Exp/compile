@@ -1,2 +1,2 @@
 #!/bin/sh
-gcc -std=c99 -O9 -march=$1 -finline-functions -funswitch-loops sudoku.c -o sudoku
+gcc -std=c99 -O9 -march=native -finline-functions -funswitch-loops sudoku.c -o sudoku
