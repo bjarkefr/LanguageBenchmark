@@ -68,6 +68,12 @@ static void print_board()
 
 static void process(int p)
 {
+	if(p == 81)
+	{
+		print_board();
+		return;
+	}
+
 	int y = div9(p);
 	int x = p % 9;
 
@@ -90,12 +96,6 @@ static void process(int p)
 			continue;
 
 		board.trace[p] = v;
-
-		if(p == 80)
-		{
-			print_board();
-			return;
-		}
 
 		*cx |= v;
 		*cy |= v;
