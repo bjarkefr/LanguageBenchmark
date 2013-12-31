@@ -1,0 +1,2 @@
+#!/bin/sh
+lua sudoku.lua < $1
