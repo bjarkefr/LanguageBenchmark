@@ -1,21 +1,22 @@
 #!/bin/sh
 
-for bench in Test*
-do
-    pushd ${bench}
-    ./compile
-    popd
-done
-
-for bench in Samples/*.txt
-do
+runTest() {
     for test in Test_*
     do
-	pushd ${test}
-	echo Priming ${test} with ${bench}
-	./run ../${bench}
-	echo Timing ${test} with ${bench}
-	time ./run ../${bench}
+	pushd "${test}"
+	echo Priming ${test} with $1
+	./run ../"$1"
+	echo Timing ${test} with $1
+	time ./run ../"$1"
 	popd
     done
-done
+}
+
+if [ $# -gt 0 ]; then
+    runTest "$1"
+else
+    for bench in Samples/*.txt; do
+	runTest "${bench}"
+    done
+fi
+

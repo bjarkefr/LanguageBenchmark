@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for bench in Test*
+do
+    pushd ${bench}
+    ./compile
+    popd
+done
