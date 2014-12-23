@@ -1,0 +1,2 @@
+#!/bin/sh
+rustc --opt-level=3 sudoku.rs -o sudoku

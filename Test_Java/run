@@ -1,3 +1,3 @@
 #!/bin/sh
-export PATH=${PATH}:$(pwd)/../../jdk1.7.0_15/bin
+export PATH=${PATH}:$(pwd)/../../jdk1.8.0_25/bin
 java main < $1
